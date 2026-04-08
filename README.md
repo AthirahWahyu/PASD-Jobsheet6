@@ -34,3 +34,5 @@ _Jawaban:_
 5.  - Dengan break ➝ ambil data pertama yang ditemukan 
     - Tanpa break ➝ ambil data terakhir yang ditemukan 
     - Tanpa break juga membuat proses lebih lama (kurang efisien)
+
+## - Praktikum 2 : Searching/Pencarian Menggunakan Algoritma Binary Search
