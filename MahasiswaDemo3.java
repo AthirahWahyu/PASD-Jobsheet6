@@ -3,15 +3,14 @@ import java.util.Scanner;
 public class MahasiswaDemo3 {
     public static void main(String[] args) {
         
-        MahasiswaBerprestasi3 list = new MahasiswaBerprestasi3();
         
         Scanner sc = new Scanner(System.in);
-
-        int jumMhs = 5;
-
-        // System.out.print("Masukkan jumlah mahasiswa: ");
-        // int jumMhs = sc.nextInt();
-        // sc.nextLine(); 
+        
+        System.out.print("Masukkan jumlah mahasiswa: ");
+        int jumMhs = sc.nextInt();
+        sc.nextLine();
+        
+        MahasiswaBerprestasi3 list = new MahasiswaBerprestasi3(jumMhs);
 
         for (int i = 0; i < jumMhs; i++) {
             System.out.println("\nData Mahasiswa ke-" + (i+1));

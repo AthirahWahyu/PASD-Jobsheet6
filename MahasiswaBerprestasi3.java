@@ -2,6 +2,11 @@ public class MahasiswaBerprestasi3 {
     Mahasiswa3 [] listMhs = new Mahasiswa3 [5];
     int idx;
 
+    // constructor untuk menentukan ukuran array 
+    MahasiswaBerprestasi3(int jumlah){
+        listMhs = new Mahasiswa3[jumlah];
+    }
+    
     void tambah (Mahasiswa3 m){
         if (idx < listMhs.length) {
             listMhs[idx] = m;
@@ -76,8 +81,8 @@ public class MahasiswaBerprestasi3 {
         if (right>=left) {
             mid = (left+right)/2;
             if (cari == listMhs[mid].ipk) {
-                return (mid);
-            } else if (listMhs[mid].ipk>cari){
+                return mid;
+            } else if (listMhs[mid].ipk < cari){
                 return findBinarySearch(cari, left, mid-1);
             } else {
                 return findBinarySearch(cari, mid+1, right);
